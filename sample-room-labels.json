@@ -1,0 +1,90 @@
+{
+  "Block A-2-201": {
+    "buildingName": "Block A",
+    "floor": 2,
+    "roomNumber": "201",
+    "labels": ["Robotics Club", "Tech Hub"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block A-3-305": {
+    "buildingName": "Block A",
+    "floor": 3,
+    "roomNumber": "305",
+    "labels": ["Study Lounge", "Quiet Zone"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block B-1-101": {
+    "buildingName": "Block B",
+    "floor": 1,
+    "roomNumber": "101",
+    "labels": ["Drama Club", "Theater Room"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block B-2-210": {
+    "buildingName": "Block B",
+    "floor": 2,
+    "roomNumber": "210",
+    "labels": ["Music Room", "Band Practice"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block C-1-105": {
+    "buildingName": "Block C",
+    "floor": 1,
+    "roomNumber": "105",
+    "labels": ["Art Studio", "Creative Space"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block D-3-301": {
+    "buildingName": "Block D",
+    "floor": 3,
+    "roomNumber": "301",
+    "labels": ["Coding Club", "Hackathon HQ"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block E-1-120": {
+    "buildingName": "Block E",
+    "floor": 1,
+    "roomNumber": "120",
+    "labels": ["Photography Club", "Dark Room"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block E-2-215": {
+    "buildingName": "Block E",
+    "floor": 2,
+    "roomNumber": "215",
+    "labels": ["Gaming Lounge", "Esports Arena"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block E-4-405": {
+    "buildingName": "Block E",
+    "floor": 4,
+    "roomNumber": "405",
+    "labels": ["Debate Club", "Discussion Room"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "Block P-2-201": {
+    "buildingName": "Block P",
+    "floor": 2,
+    "roomNumber": "201",
+    "labels": ["Student Council", "Leadership Hub"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  },
+  "PEB Block-0-10": {
+    "buildingName": "PEB Block",
+    "floor": 0,
+    "roomNumber": "10",
+    "labels": ["Maker Space", "Workshop"],
+    "createdAt": 1699564800000,
+    "updatedAt": 1699564800000
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "Block E": {
+    "0": {
+      "floor": 0,
+      "block": "E",
+      "width": 800,
+      "height": 400,
+      "rooms": [
+        { "roomNumber": "001", "x": 50, "y": 50, "width": 80, "height": 60, "label": "Room 001" },
+        { "roomNumber": "002", "x": 150, "y": 50, "width": 80, "height": 60, "label": "Room 002" },
+        { "roomNumber": "003", "x": 250, "y": 50, "width": 80, "height": 60, "label": "Room 003" },
+        { "roomNumber": "004", "x": 350, "y": 50, "width": 80, "height": 60, "label": "Room 004" },
+        { "roomNumber": "005", "x": 450, "y": 50, "width": 80, "height": 60, "label": "Room 005" },
+        { "roomNumber": "006", "x": 550, "y": 50, "width": 80, "height": 60, "label": "Room 006" },
+        { "roomNumber": "007", "x": 650, "y": 50, "width": 80, "height": 60, "label": "Room 007" },
+        { "roomNumber": "008", "x": 50, "y": 150, "width": 80, "height": 60, "label": "Room 008" },
+        { "roomNumber": "009", "x": 150, "y": 150, "width": 80, "height": 60, "label": "Room 009" },
+        { "roomNumber": "010", "x": 250, "y": 150, "width": 80, "height": 60, "label": "Room 010" }
+      ],
+      "stairs": [
+        { "x": 400, "y": 200, "label": "Stairs" }
+      ],
+      "elevators": [
+        { "x": 500, "y": 200 }
+      ]
+    },
+    "1": {
+      "floor": 1,
+      "block": "E",
+      "width": 800,
+      "height": 400,
+      "rooms": [
+        { "roomNumber": "101", "x": 50, "y": 50, "width": 80, "height": 60, "label": "Room 101" },
+        { "roomNumber": "102", "x": 150, "y": 50, "width": 80, "height": 60, "label": "Room 102" },
+        { "roomNumber": "103", "x": 250, "y": 50, "width": 80, "height": 60, "label": "Room 103" },
+        { "roomNumber": "104", "x": 350, "y": 50, "width": 80, "height": 60, "label": "Room 104" },
+        { "roomNumber": "105", "x": 450, "y": 50, "width": 80, "height": 60, "label": "Room 105" },
+        { "roomNumber": "106", "x": 550, "y": 50, "width": 80, "height": 60, "label": "Room 106" },
+        { "roomNumber": "107", "x": 650, "y": 50, "width": 80, "height": 60, "label": "Room 107" },
+        { "roomNumber": "108", "x": 50, "y": 150, "width": 80, "height": 60, "label": "Room 108" },
+        { "roomNumber": "109", "x": 150, "y": 150, "width": 80, "height": 60, "label": "Room 109" },
+        { "roomNumber": "110", "x": 250, "y": 150, "width": 80, "height": 60, "label": "Room 110" }
+      ],
+      "stairs": [
+        { "x": 400, "y": 200, "label": "Stairs" }
+      ],
+      "elevators": [
+        { "x": 500, "y": 200 }
+      ]
+    }
+  },
+  "_instructions": {
+    "description": "Define floor plans for each block and floor",
+    "coordinates": "x, y are positions on the floor plan canvas",
+    "dimensions": "width and height define room size",
+    "example": "Add more floors by copying the structure above"
+  }
+}

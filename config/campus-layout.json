@@ -1,0 +1,68 @@
+{
+  "mapSettings": {
+    "viewBoxWidth": 600,
+    "viewBoxHeight": 1100,
+    "description": ""
+  },
+
+  "buildings": {
+    "Block P": { "x": 300, "y": 80, "description": "Block P", "type": "academic", "emoji": "🏢", "floors": 4, "roomsPerFloor": 10 },
+    "Block D": { "x": 150, "y": 80, "description": "Block D", "type": "academic", "emoji": "🏢", "floors": 5, "roomsPerFloor": 10 },
+
+    "JSK Greens": { "x": 300, "y": 200, "description": "JSK Greens - Central green space", "type": "recreational", "emoji": "🌳", "floors": 0, "roomsPerFloor": 0 },
+
+    "Block E": { 
+      "x": 200, 
+      "y": 320, 
+      "description": "Block E (moved to left side)", 
+      "type": "academic", 
+      "emoji": "🏢", 
+      "floors": 5, 
+      "roomsPerFloor": 40 
+    },
+
+    "Block A": { "x": 450, "y": 320, "description": "Block A (right side)", "type": "academic", "emoji": "🏢", "floors": 4, "roomsPerFloor": 10 },
+    "Block B": { "x": 450, "y": 420, "description": "Block B (right side)", "type": "academic", "emoji": "🏢", "floors": 4, "roomsPerFloor": 10 },
+    "Block C": { "x": 450, "y": 520, "description": "Block C (right side)", "type": "academic", "emoji": "🏢", "floors": 3, "roomsPerFloor": 10 },
+
+    "Annapurna Canteen": { "x": 450, "y": 620, "description": "Annapurna Canteen (right side)", "type": "canteen", "emoji": "🍽️", "floors": 0, "roomsPerFloor": 0 },
+    "SAC Stage": { "x": 450, "y": 720, "description": "SAC Stage (right side)", "type": "recreational", "emoji": "🎪", "floors": 0, "roomsPerFloor": 0 },
+    "Scinti Stage": { "x": 450, "y": 820, "description": "Scinti Stage (right side)", "type": "recreational", "emoji": "🎤", "floors": 0, "roomsPerFloor": 0 },
+
+    "Coca-Cola Canteen": { 
+      "x": 350, 
+      "y": 820, 
+      "description": "Coca-Cola Canteen (left of Scinti Stage)", 
+      "type": "canteen", 
+      "emoji": "🥤", 
+      "floors": 0, "roomsPerFloor": 0 
+    },
+
+    "Ground": { "x": 450, "y": 1000, "description": "Ground (right side)", "type": "recreational", "emoji": "🏟️", "floors": 0, "roomsPerFloor": 0 },
+    "PEB Block": { "x": 450, "y": 1080, "description": "PEB Block (right side)", "type": "facility", "emoji": "🏗️", "floors": 0, "roomsPerFloor": 10 }
+  },
+
+  "connections": [
+    ["Block A", "Block B"],
+    ["Block B", "Block C"],
+
+    ["Block D", "JSK Greens"],
+    ["Block D", "Block E"],
+    ["Block P", "JSK Greens"],
+
+    ["JSK Greens", "Block A"],
+
+    ["Block C", "Annapurna Canteen"],
+    ["Annapurna Canteen", "SAC Stage"],
+    ["SAC Stage", "Scinti Stage"],
+    ["Scinti Stage", "Ground"],
+    ["Scinti Stage", "Coca-Cola Canteen"],
+    ["Ground", "PEB Block"],
+
+    ["Block E", "Block A"],
+    ["Block E", "Block B"],
+    ["Block E", "Block C"],
+    ["Block E", "Annapurna Canteen"],
+    ["Block E", "Coca-Cola Canteen"]
+  ]
+}

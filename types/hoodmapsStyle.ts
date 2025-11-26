@@ -21,6 +21,8 @@ export interface SearchResult {
   roomNumber?: string;
   labels?: string[];
   matchedLabel?: string; // Which label matched the search
+  tags?: import('@/types/roomTags').Tag[]; // Tags applied to the room
+  matchedTags?: import('@/types/roomTags').Tag[]; // Which tags matched the search
 }
 
 export interface ZoneSize {

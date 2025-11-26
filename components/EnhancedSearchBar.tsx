@@ -90,7 +90,7 @@ export function EnhancedSearchBar({
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search buildings or room labels..."
+          placeholder="Search buildings, room labels, or tags..."
           className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
         {query && (
@@ -163,14 +163,33 @@ export function EnhancedSearchBar({
                         <p className="text-sm text-gray-500">
                           {result.building} - Floor {result.floor} - Room {result.roomNumber}
                         </p>
-                        {result.labels && result.labels.length > 1 && (
+                        {/* Labels */}
+                        {result.labels && result.labels.length > 0 && (
                           <div className="flex flex-wrap gap-1 mt-1">
                             {result.labels.map((label, i) => (
                               <span
-                                key={i}
+                                key={`label-${i}`}
                                 className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded"
                               >
                                 {label}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        {/* Tags */}
+                        {result.tags && result.tags.length > 0 && (
+                          <div className="flex flex-wrap gap-1 mt-1">
+                            {result.tags.map((tag) => (
+                              <span
+                                key={tag.id}
+                                className="text-xs px-2 py-0.5 rounded"
+                                style={{
+                                  backgroundColor: `${tag.color}20`,
+                                  color: tag.color,
+                                  border: `1px solid ${tag.color}`
+                                }}
+                              >
+                                {tag.name}
                               </span>
                             ))}
                           </div>

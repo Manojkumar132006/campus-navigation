@@ -17,8 +17,9 @@ import { BuildingList } from '@/components/BuildingList';
 import { RoutePanel } from '@/components/RoutePanel';
 import { BuildingDetails } from '@/components/BuildingDetails';
 import { CategoryFilter } from '@/components/CategoryFilter';
-import { RoomLabelEditor } from '@/components/RoomLabelEditor';
+import { RoomTagEditor } from '@/components/RoomTagEditor';
 import { RoomLabelProvider, useRoomLabels } from '@/contexts/RoomLabelContext';
+import { RoomTagProvider, useRoomTags } from '@/contexts/RoomTagContext';
 
 function HomePageContent() {
   // Initialize graph and route calculator
@@ -26,13 +27,14 @@ function HomePageContent() {
   const routeCalculator = useMemo(() => new RouteCalculator(graph), [graph]);
   const roomNavigator = useMemo(() => new RoomNavigator(graph), [graph]);
   
-  // Get room labels from context
+  // Get room labels and tags from context
   const { roomLabelManager, roomLabels } = useRoomLabels();
+  const { tagManager } = useRoomTags();
   
-  // Initialize enhanced search service
+  // Initialize enhanced search service with tag support
   const enhancedSearchService = useMemo(
-    () => new EnhancedSearchService(graph, roomLabelManager),
-    [graph, roomLabelManager]
+    () => new EnhancedSearchService(graph, roomLabelManager, tagManager),
+    [graph, roomLabelManager, tagManager]
   );
 
   // State management
@@ -376,12 +378,13 @@ function HomePageContent() {
         <BuildingDetails
           building={showBuildingDetails}
           onClose={() => setShowBuildingDetails(null)}
+          onRoomClick={handleRoomClick}
         />
       )}
 
-      {/* Room Label Editor Modal */}
+      {/* Room Tag Editor Modal (includes labels) */}
       {roomEditorOpen && (
-        <RoomLabelEditor
+        <RoomTagEditor
           building={roomEditorOpen.building}
           floor={roomEditorOpen.floor}
           roomNumber={roomEditorOpen.roomNumber}
@@ -395,7 +398,9 @@ function HomePageContent() {
 export default function HomePage() {
   return (
     <RoomLabelProvider>
-      <HomePageContent />
+      <RoomTagProvider>
+        <HomePageContent />
+      </RoomTagProvider>
     </RoomLabelProvider>
   );
 }

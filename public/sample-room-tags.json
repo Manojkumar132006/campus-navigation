@@ -1,0 +1,229 @@
+{
+  "categories": {
+    "cat-activities": {
+      "id": "cat-activities",
+      "name": "Activities",
+      "color": "#3B82F6",
+      "icon": "🎯",
+      "isSystem": true,
+      "createdAt": 1700000000000
+    },
+    "cat-facilities": {
+      "id": "cat-facilities",
+      "name": "Facilities",
+      "color": "#10B981",
+      "icon": "🏢",
+      "isSystem": true,
+      "createdAt": 1700000000000
+    },
+    "cat-accessibility": {
+      "id": "cat-accessibility",
+      "name": "Accessibility",
+      "color": "#8B5CF6",
+      "icon": "♿",
+      "isSystem": true,
+      "createdAt": 1700000000000
+    },
+    "cat-amenities": {
+      "id": "cat-amenities",
+      "name": "Amenities",
+      "color": "#F59E0B",
+      "icon": "⭐",
+      "isSystem": true,
+      "createdAt": 1700000000000
+    }
+  },
+  "tags": {
+    "tag-dance": {
+      "id": "tag-dance",
+      "name": "Dance Club",
+      "categoryId": "cat-activities",
+      "color": "#3B82F6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-music": {
+      "id": "tag-music",
+      "name": "Music Club",
+      "categoryId": "cat-activities",
+      "color": "#3B82F6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-art": {
+      "id": "tag-art",
+      "name": "Art Club",
+      "categoryId": "cat-activities",
+      "color": "#3B82F6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-robotics": {
+      "id": "tag-robotics",
+      "name": "Robotics Club",
+      "categoryId": "cat-activities",
+      "color": "#3B82F6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-drama": {
+      "id": "tag-drama",
+      "name": "Drama Club",
+      "categoryId": "cat-activities",
+      "color": "#3B82F6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-lab": {
+      "id": "tag-lab",
+      "name": "Laboratory",
+      "categoryId": "cat-facilities",
+      "color": "#10B981",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-workshop": {
+      "id": "tag-workshop",
+      "name": "Workshop",
+      "categoryId": "cat-facilities",
+      "color": "#10B981",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-study": {
+      "id": "tag-study",
+      "name": "Study Room",
+      "categoryId": "cat-facilities",
+      "color": "#10B981",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-meeting": {
+      "id": "tag-meeting",
+      "name": "Meeting Room",
+      "categoryId": "cat-facilities",
+      "color": "#10B981",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-lounge": {
+      "id": "tag-lounge",
+      "name": "Lounge",
+      "categoryId": "cat-facilities",
+      "color": "#10B981",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-wheelchair": {
+      "id": "tag-wheelchair",
+      "name": "Wheelchair Accessible",
+      "categoryId": "cat-accessibility",
+      "color": "#8B5CF6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-elevator": {
+      "id": "tag-elevator",
+      "name": "Elevator Access",
+      "categoryId": "cat-accessibility",
+      "color": "#8B5CF6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-ramp": {
+      "id": "tag-ramp",
+      "name": "Ramp Available",
+      "categoryId": "cat-accessibility",
+      "color": "#8B5CF6",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-wifi": {
+      "id": "tag-wifi",
+      "name": "WiFi Available",
+      "categoryId": "cat-amenities",
+      "color": "#F59E0B",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-projector": {
+      "id": "tag-projector",
+      "name": "Projector",
+      "categoryId": "cat-amenities",
+      "color": "#F59E0B",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-whiteboard": {
+      "id": "tag-whiteboard",
+      "name": "Whiteboard",
+      "categoryId": "cat-amenities",
+      "color": "#F59E0B",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    },
+    "tag-ac": {
+      "id": "tag-ac",
+      "name": "Air Conditioning",
+      "categoryId": "cat-amenities",
+      "color": "#F59E0B",
+      "isSystem": true,
+      "createdAt": 1700000000000,
+      "updatedAt": 1700000000000
+    }
+  },
+  "roomAssociations": {
+    "Block A-2-201": {
+      "roomKey": "Block A-2-201",
+      "tagIds": ["tag-robotics", "tag-lab", "tag-wifi", "tag-projector"],
+      "updatedAt": 1700000000000
+    },
+    "Block B-1-101": {
+      "roomKey": "Block B-1-101",
+      "tagIds": ["tag-drama", "tag-meeting", "tag-projector", "tag-ac"],
+      "updatedAt": 1700000000000
+    },
+    "Block B-2-210": {
+      "roomKey": "Block B-2-210",
+      "tagIds": ["tag-music", "tag-lounge", "tag-ac"],
+      "updatedAt": 1700000000000
+    },
+    "Block C-1-105": {
+      "roomKey": "Block C-1-105",
+      "tagIds": ["tag-art", "tag-workshop", "tag-wheelchair"],
+      "updatedAt": 1700000000000
+    },
+    "Block A-1-110": {
+      "roomKey": "Block A-1-110",
+      "tagIds": ["tag-study", "tag-wifi", "tag-whiteboard", "tag-wheelchair", "tag-elevator"],
+      "updatedAt": 1700000000000
+    },
+    "Block D-3-305": {
+      "roomKey": "Block D-3-305",
+      "tagIds": ["tag-dance", "tag-lounge", "tag-ac"],
+      "updatedAt": 1700000000000
+    },
+    "Block E-2-220": {
+      "roomKey": "Block E-2-220",
+      "tagIds": ["tag-lab", "tag-wifi", "tag-projector", "tag-whiteboard"],
+      "updatedAt": 1700000000000
+    }
+  },
+  "version": 1
+}

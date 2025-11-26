@@ -10,9 +10,10 @@ import { FloorPlan } from '@/types/floorplan';
 interface BuildingDetailsProps {
   building: BuildingNode;
   onClose: () => void;
+  onRoomClick?: (building: string, floor: number, roomNumber: string) => void;
 }
 
-export function BuildingDetails({ building, onClose }: BuildingDetailsProps) {
+export function BuildingDetails({ building, onClose, onRoomClick }: BuildingDetailsProps) {
   const [selectedFloor, setSelectedFloor] = useState<number | null>(null);
   const [selectedRoom, setSelectedRoom] = useState<string | undefined>();
   const [viewMode, setViewMode] = useState<'list' | 'floorplan'>('list');
@@ -127,7 +128,12 @@ export function BuildingDetails({ building, onClose }: BuildingDetailsProps) {
                     {floorRooms.map((room) => (
                       <button
                         key={room.roomNumber}
-                        onClick={() => setSelectedRoom(room.roomNumber)}
+                        onClick={() => {
+                          setSelectedRoom(room.roomNumber);
+                          if (onRoomClick && selectedFloor !== null) {
+                            onRoomClick(building.name, selectedFloor, room.roomNumber);
+                          }
+                        }}
                         className={`bg-gray-50 border rounded-lg p-3 text-center hover:bg-blue-50 hover:border-blue-300 transition-colors ${
                           selectedRoom === room.roomNumber
                             ? 'border-blue-500 bg-blue-50'
@@ -152,7 +158,12 @@ export function BuildingDetails({ building, onClose }: BuildingDetailsProps) {
                     <FloorPlanViewer
                       floorPlan={currentFloorPlan}
                       selectedRoom={selectedRoom}
-                      onRoomClick={setSelectedRoom}
+                      onRoomClick={(roomNumber) => {
+                        setSelectedRoom(roomNumber);
+                        if (onRoomClick && selectedFloor !== null) {
+                          onRoomClick(building.name, selectedFloor, roomNumber);
+                        }
+                      }}
                     />
                   </div>
                 </div>
